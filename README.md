@@ -4,7 +4,7 @@ Helps you download and test Codeforces problems, so that you can spend more time
 
 ## Installation
 
-### Build - Ubuntu
+### Build (\*NIX)
 
 Required: Python 3.x.x
 Highly recommended: `virtualenv`
@@ -26,3 +26,17 @@ Download `bin/cf` from this repository and put it on your `PATH` or executables 
 Make the program executable and then run on the command line
 
 `cf download <PROBLEM> <ID>`
+e.g.
+`cf download 1040 B`
+
+The problem description will be downloaded
+
+To test a solution in Python (other language support coming soon)
+```
+> cd 1040B
+> cf test
+```
+
+#### Options
+
+To create a solution file of a different language type, use `--lang <file extension>` e.g. `--lang hs` for Haskell.  For example, `cf download 1040 B --lang hs`
